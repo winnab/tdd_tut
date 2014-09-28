@@ -8,10 +8,10 @@ end
 
 describe Team do
   it "has a name" do
-    Team.new.should respond_to :name
+    Team.new("Random Name").should respond_to :name
   end
   it "has a list of players" do
-    Team.new.players.should be_kind_of Array
+    Team.new("Random Name").players.should be_kind_of Array
   end
   it "complains if there is a bad word in the name"
 end
