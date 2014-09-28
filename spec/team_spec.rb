@@ -14,4 +14,11 @@ describe Team do
     Team.new("Random Name").players.should be_kind_of Array
   end
   it "complains if there is a bad word in the name"
+
+  context "given a bad list of players" do
+    let(:bad_players) { {} }
+    it "fails to create given a bad player list" do
+      expect { Team.new("Random Name", bad_players) }.to raise_error
+      end
+  end
 end
