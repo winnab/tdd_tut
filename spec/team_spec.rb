@@ -20,6 +20,10 @@ describe Team do
     expect { Team.new("Crappy name") }.to raise_error
   end
 
+  it "is favored if it has a celebrity in it" do
+    expect { Team.new("Random Name", ["George Cloony", "Bob Smith"]).should be_favored}
+  end
+
   context "given a bad list of players" do
     let(:bad_players) { {} }
     it "fails to create given a bad player list" do
