@@ -1,5 +1,6 @@
 require_relative "../lib/team.rb"
 require_relative "../lib/competition.rb"
+require_relative "../spec/support/matchers/team_support.rb"
 
 RSpec.configure do |rspec|
   rspec.deprecation_stream = File.open("./deprecation_warnings.txt", "w")
