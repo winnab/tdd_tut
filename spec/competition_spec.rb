@@ -7,14 +7,10 @@ RSpec.configure do |rspec|
 end
 
 describe Competition do
-  # use "let" instead of instance vars for specs
   let(:competition) { Competition.new }
   let(:team) { Team.new("Random Name") }
 
-  # context is the same function a describe
-  # context needs support (before method)
   context "having no questions" do
-    # can also do before(:each)
     before { competition.questions = [] }
     it "doesn't accept any teams" do
       competition.should_not allow_teams_to_enter
