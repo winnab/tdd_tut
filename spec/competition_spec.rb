@@ -17,9 +17,7 @@ describe Competition do
     # can also do before(:each)
     before { competition.questions = [] }
     it "doesn't accept any teams" do
-      expect do
-        team.enter_competition(competition)
-      end.to raise_error Competition::Closed
+      competition.should_not allow_teams_to_enter
     end
   end
 
