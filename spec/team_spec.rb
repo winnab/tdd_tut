@@ -1,14 +1,12 @@
 # from https://www.youtube.com/watch?v=dyBybIZJpyA&list=PLVBFw0Pn9e9IduDzgOx7Yoh0ur7SZa7hu
 
 require_relative "../lib/team.rb"
-require_relative "../lib/competition.rb"
 
 RSpec.configure do |rspec|
   rspec.deprecation_stream = File.open("./deprecation_warnings.txt", "w")
 end
 
 describe Team do
-
   it "has a name" do
     Team.new("Random Name").should respond_to :name
   end
