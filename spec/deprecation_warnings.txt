@@ -1,6 +1,0 @@
-tesrUsing `should` from rspec-expectations' old `:should` syntax without explicitly enabling the syntax is deprecated. Use the new `:expect` syntax or explicitly enable `:should` instead. Called from /Users/winna/Google Drive/Dev/tdd_ruby/spec/team_spec.rb:11:in `block (2 levels) in <top (required)>'.
-
-If you need more of the backtrace for any of these deprecations to
-identify where to make the necessary changes, you can configure
-`config.raise_errors_for_deprecations!`, and it will turn the
-deprecation warnings into errors, giving you the full backtrace.

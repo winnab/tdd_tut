@@ -1,7 +1,6 @@
 # from https://www.youtube.com/watch?v=dyBybIZJpyA&list=PLVBFw0Pn9e9IduDzgOx7Yoh0ur7SZa7hu
 
 require_relative "../lib/team.rb"
-require_relative "./spec_helper.rb"
 
 describe Team do
   it "has a name" do
