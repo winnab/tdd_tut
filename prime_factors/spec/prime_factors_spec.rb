@@ -5,9 +5,10 @@ require_relative '../lib/prime_factors.rb'
 describe PrimeFactors do
   [
     ['1', []]
-  ].each do |n, factors|
-    it "should factor #{n}" do
-      PrimeFactors.of(eval n).should == factors
+  ].each do |expression, factors|
+    it "should factor #{expression}" do
+      number = eval expression
+      PrimeFactors.of(number).should == factors
     end
   end
 
