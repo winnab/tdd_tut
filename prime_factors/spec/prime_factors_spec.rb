@@ -4,7 +4,8 @@ require_relative '../lib/prime_factors.rb'
 
 describe PrimeFactors do
   [
-    ['1', []]
+    ['1', []],
+    ['2', [2]]
   ].each do |expression, factors|
     it "should factor #{expression}" do
       number = eval expression
