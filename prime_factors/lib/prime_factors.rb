@@ -3,8 +3,8 @@ module PrimeFactors
     factors = []
     if n > 1
       factors << 2 and n/=2 if n%2 == 0
-      factors << n if n > 1
     end
+    factors << n if n > 1
     factors
   end
 end
