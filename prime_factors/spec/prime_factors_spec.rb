@@ -4,10 +4,10 @@ require_relative '../lib/prime_factors.rb'
 
 describe PrimeFactors do
   [
-    [1, []]
+    ['1', []]
   ].each do |n, factors|
     it "should factor #{n}" do
-      PrimeFactors.of(n).should == factors
+      PrimeFactors.of(eval n).should == factors
     end
   end
 
